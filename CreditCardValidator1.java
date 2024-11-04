@@ -1,18 +1,18 @@
     import java.util.Scanner;
 public class CreditCardValidator1 {
     public static void validateCard(String ccNumber) {
-
+ // Check if credit card number length is valid
         if (ccNumber.length() < 8 || ccNumber.length() > 9) {
             System.out.println("Invalid credit card number");
             return;
         }
-    
+    // Extract last digit and reverse the remaining number
         char lastDigitChar = ccNumber.charAt(ccNumber.length() - 1);
         int lastDigit = Character.getNumericValue(lastDigitChar);
         String remainingNumber = ccNumber.substring(0, ccNumber.length() - 1);
 
         String reversedNumber = new StringBuilder(remainingNumber).reverse().toString();
-
+// Process each digit based on position
         int[] processedDigits = new int[reversedNumber.length()];
         for (int i = 0; i < reversedNumber.length(); i++) {
             int currentDigit = Character.getNumericValue(reversedNumber.charAt(i));
@@ -24,7 +24,7 @@ public class CreditCardValidator1 {
             }
             processedDigits[i] = currentDigit;
         }
-    
+    // Calculate sum and validate against last digit
         int totalSum = 0;
         for (int digit : processedDigits) {
             totalSum += digit;
