@@ -111,4 +111,3 @@ public class PayrollSystem {
         new ExecutiveEmployee(3, "Harsha", "Head of Department", 8000, 15).displayInfo();
     }
 }
-
