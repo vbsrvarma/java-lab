@@ -80,9 +80,9 @@ public int MultiHouseBuilding(int[]... money) {
     robber.MachineLearning();
 
 //test cases for abstract methods
-    System.out.println("RowHouses([1,2,3,0]): " + robber.RowHouses(new int[]{1, 2, 3, 0})); // Output: 4
-    System.out.println("RoundHouses([1,2,3,4]): " + robber.RoundHouses(new int[]{1, 2, 3, 4})); // Output: 6
-    System.out.println("SquareHouse([5,10,2,7]): " + robber.SquareHouse(new int[]{5, 10, 2, 7})); // Output: 17
+    System.out.println("RowHouses([1,2,3,0]): " + robber.RowHouses(new int[]{1, 2, 3, 0}));
+    System.out.println("RoundHouses([1,2,3,4]): " + robber.RoundHouses(new int[]{1, 2, 3, 4}));
+    System.out.println("SquareHouse([5,10,2,7]): " + robber.SquareHouse(new int[]{5, 10, 2, 7}));
     System.out.println("MultiHouseBuilding(): " + robber.MultiHouseBuilding(
         new int[]{5, 3, 8, 2},
         new int[]{10, 12, 7, 6},
