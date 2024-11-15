@@ -65,5 +65,9 @@ public class Lab1b {
 
         System.out.println("Test 4 (Left Word: 'wbp', Right Word: 'mqdz'):");
         game.battle("wbp", "mqdz");
+
+        System.out.println("Test 5 (Left Word: 'wbp', Right Word: 'aei'):");
+        game.battle("wbp", "aei");
+
     }
 }
