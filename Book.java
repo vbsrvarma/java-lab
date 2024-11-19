@@ -80,7 +80,7 @@ public void displayBookInfo() {
 
 
 public class Book {
-    public class book( ) {
+    public class book() {
     }
     }
     public void borrowBook() {
