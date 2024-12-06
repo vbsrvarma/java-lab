@@ -95,7 +95,6 @@ public double calculateOverdueFine(Date returnedDate, Date dueDate) {
    long daysOverdue = (returnedDate.getTime() - dueDate.getTime()) / (24 * 60 * 60 * 1000);
    return daysOverdue * 2.0;
 }
-
 public int getTotalBooksAvailable() {
     return 0;
 }
